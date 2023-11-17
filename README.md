@@ -21,10 +21,10 @@ The tool outputs xyz-coordinates of your custom spring design with several diffe
 ## EXAMPLES:
 If you are new to designing springs, or unsure of appropriate stiffness/deflection ranges, below are some examples from the literature of spring radius, thickness, stiffness and deflection:
 
-dos Santos et al. '15: 62.5mm 6mm 150Nm/rad 5.73deg
-Carpino et al. '12: 42.5mm 3mm 92Nm/rad 4.76deg
-Georgiev et al. '17: 74mm 9.5mm 600Nm/rad 20deg
-Tsagarakis et al. '09: 35mm 10mm 153Nm/rad 10deg
-Lagoda et al. '10: 37.5mm 15mm 353Nm/rad 16.23deg
+dos Santos et al. '15: 62.5mm 6mm 150Nm/rad 5.73deg <br/>
+Carpino et al. '12: 42.5mm 3mm 92Nm/rad 4.76deg <br/>
+Georgiev et al. '17: 74mm 9.5mm 600Nm/rad 20deg <br/>
+Tsagarakis et al. '09: 35mm 10mm 153Nm/rad 10deg <br/>
+Lagoda et al. '10: 37.5mm 15mm 353Nm/rad 16.23deg <br/>
 Wang et al. '13: 41.5mm 10.5mm 800Nm/rad 7.16deg
 
