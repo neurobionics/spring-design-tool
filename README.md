@@ -2,8 +2,8 @@
 a software tool that facilitates the design of lightweight torsion springs
 
 <p float="left">
-  <img src="Design Tool Snip.png" width="500" />
-  <img src="spring GIF.gif" width="290" /> 
+  <img src="assets/Design Tool Snip.png" width="500" />
+  <img src="assets/spring GIF.gif" width="290" /> 
 </p>
 
 ## INSTALLATION:
