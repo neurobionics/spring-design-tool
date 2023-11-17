@@ -6,6 +6,9 @@ a software tool that facilitates the design of lightweight torsion springs
   <img src="assets/spring GIF.gif" width="290" /> 
 </p>
 
+## DOWNLOAD:
+Download the latest release.
+
 ## INSTALLATION:
 If you have a Matlab license, the quickest and easiest way to proceed is to install the Design Tool as a custom Matlab App (APPS>Install App). If you do not have access to a Matlab license and you do have access to a PC, then open the .exe file and it will install the Design Tool as a desktop application.
 
