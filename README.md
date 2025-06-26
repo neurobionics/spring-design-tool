@@ -1,30 +1,50 @@
-# spring-design-tool
-a software tool that facilitates the design of lightweight torsion springs
+# Spring Design Tool
 
-<p float="left">
-  <img src="assets/Design Tool Snip.png" width="500" />
-  <img src="assets/spring GIF.gif" width="290" /> 
-</p>
+A powerful software tool designed to facilitate the creation of lightweight torsion springs.
 
-## DOWNLOAD:
-Download the [latest release](https://github.com/neurobionics/spring-design-tool/releases).  
+<div align="center">
+  <img src="assets/Design Tool Snip.png" width="500" alt="Design Tool Interface"/>
+  <img src="assets/spring GIF.gif" width="290" alt="Spring Design Animation"/>
+</div>
 
-## INSTALLATION:
-If you have a Matlab license, the quickest and easiest way to proceed is to install the Design Tool as a custom Matlab App (APPS>Install App). If you do not have access to a Matlab license and you do have access to a PC, then open the .exe file and it will install the Design Tool as a desktop application.
+## 📥 Download
 
-## USE:
-Hover over labels and/or data fields for explanations of each input. For 'Optional' arguments, leaving the input as 0 allows the design tool to automatically calculate appropriate values. When inputs are set, click 'Create Spring' to generate your custom design. For best performance, enter a 'Run Time' of 15-30 seconds. If the design looks satisfactory, select your output 'File Type' and 'Units' and click 'Download Design'. The 'File Type' selection will depend on the CAD software you intend to use (e.g. Solidworks uses '.txt' while Fusion360 and Onshape use '.csv').
+Get the [latest release](https://github.com/neurobionics/spring-design-tool/releases).
 
-## CREATE SOLID MODEL:
-The tool outputs xyz-coordinates of your custom spring design with several different curve options, so consult README_profile_descriptions (which appears in the output folder) for detailed explanations. To create a 3D solid model, import the appropriate curves into the CAD software of your choice and use the profiles to create geometry that can be extruded to your designed spring thickness. The process for importing the curves varies across CAD platforms, but tutorials can typically found by searching 'CAD_SOFTWARE_NAME curve through xyz points' in an internet browser.
+## 🚀 Installation
 
-## EXAMPLES:
-If you are new to designing springs, or unsure of appropriate stiffness/deflection ranges, below are some examples from the literature of spring radius, thickness, stiffness and deflection:
+### For MATLAB Users
 
-dos Santos et al. '15: 62.5mm 6mm 150Nm/rad 5.73deg <br/>
-Carpino et al. '12: 42.5mm 3mm 92Nm/rad 4.76deg <br/>
-Georgiev et al. '17: 74mm 9.5mm 600Nm/rad 20deg <br/>
-Tsagarakis et al. '09: 35mm 10mm 153Nm/rad 10deg <br/>
-Lagoda et al. '10: 37.5mm 15mm 353Nm/rad 16.23deg <br/>
-Wang et al. '13: 41.5mm 10.5mm 800Nm/rad 7.16deg
+- Ensure you have a MATLAB license.
+- Install the Design Tool as a custom MATLAB App through **APPS > Install App**.
 
+### Without MATLAB License
+
+- Compatible with PCs.
+- Open the `.exe` file to install the Design Tool as a desktop application.
+
+## 🛠️ Usage
+
+- Hover over labels or data fields for explanations of each input.
+- For 'Optional' arguments, inputting 0 lets the tool calculate values automatically.
+- Once inputs are set, click **Create Spring** to generate your custom design.
+- For optimal performance, enter a 'Run Time' of 15-30 seconds.
+- If satisfied with the design, select your output 'File Type' and 'Units' and click **Download Design**.
+  - Choose the 'File Type' based on your CAD software (e.g., `.txt` for Solidworks, `.csv` for Fusion360 and Onshape).
+
+## 🧩 Create Solid Model
+
+- The tool outputs xyz-coordinates for your spring design with various curve options.
+- Check the `README_profile_descriptions` in the output folder for detailed explanations.
+- Import the curves into your CAD software to create 3D models. Search for tutorials using "CAD_SOFTWARE_NAME curve through xyz points" for guidance.
+
+## 📚 Examples
+
+If unfamiliar with designing springs or unsure of suitable stiffness/deflection ranges, explore these literature examples of spring radius, thickness, stiffness, and deflection:
+
+- **dos Santos et al. '15**: 62.5 mm, 6 mm, 150 Nm/rad, 5.73°
+- **Carpino et al. '12**: 42.5 mm, 3 mm, 92 Nm/rad, 4.76°
+- **Georgiev et al. '17**: 74 mm, 9.5 mm, 600 Nm/rad, 20°
+- **Tsagarakis et al. '09**: 35 mm, 10 mm, 153 Nm/rad, 10°
+- **Lagoda et al. '10**: 37.5 mm, 15 mm, 353 Nm/rad, 16.23°
+- **Wang et al. '13**: 41.5 mm, 10.5 mm, 800 Nm/rad, 7.16°
