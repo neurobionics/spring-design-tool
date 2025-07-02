@@ -41,20 +41,32 @@ The tool outputs xyz-coordinates for your spring design with various curve optio
 - **Inner**: The inner curve of the full spring, including all flexures, tips, and fillets.
 - **Outer**: The outer curve of the full spring with all semi-circular cutouts for the dowels.
 - **Cam_profile**: The complete curve of the camshaft, including all gear-like teeth.
+- **Cam_raw**: The curve of the contact surface (no fillets or extra geometry).
 
 If you forget which settings you selected for your spring design, check `README_spring_properties` in the output folder!
 
 ## 🧩 Create Solid Model
 
-<details>
-<summary><strong>🔧 CAD Selection</strong></summary>
+### For OnShape Users (recommended)
 
-Use the following resources to import the spring geometry:
+- Ensure you downloaded the curves as `.csv` files with `m` for units.
+- Copy [this template](https://cad.onshape.com/documents/ca804b1fdb50c919aa2737f1/w/f0c25649eb1bf60ca8ba5e0b/e/71a2f57b2c3e3aa6a4f81394) to your preferred OnShape folder.
+- Import `raw_m.csv` and `cam_raw_m.csv` to your copied workspace.
+- In the Variable Studio, update workspace variables with the values found in `README_spring_properties` (in the output folder).
+- In the Part Studio feature tree, edit `Cam_Raw CSV` and `Raw CSV` by updating their respective tables to reference your new `.csv` files.
+- Open the first sketch (`Spring & Cam Geometry`) and resolve errors:
+  - Delete curves with broken relationships.
+  - Click on new curves and convert to sketch (`u`).
+  - Make any adjustments to ensure the geometry is closed.
+- Exit the sketch and resolve any final details (the fillets often lose their reference).
+- Make any custom modifications you'd like!
+
+### For Other CAD Software
+
+You will need the following resources to import the spring geometry:
   - **SolidWorks**: [Curves Through XYZ Points](https://help.solidworks.com/2021/english/SolidWorks/sldworks/hidd_curve_in_file.htm)
-  - **OnShape**: [3D XYZ CSV Points and Splines](https://cad.onshape.com/documents/a5566bc4a7c123d4958fd925/v/74ef42fd67330626670210c7/e/07d3a8c9750bc033aa654b39)
+  - **Fusion 360**: ImportSplineCSV (UTILITIES > ADD-INS > Scripts and Add-Ins)
   - **Other**: Search for tutorials using "CAD_SOFTWARE_NAME curve through xyz points" for guidance.
-
-</details>
 
 <details>
 <summary><strong>⚡ Quick Model</strong></summary>
@@ -77,7 +89,7 @@ Use the following resources to import the spring geometry:
   - Sketch the rim wedge to close the open end of the flexure.
   - Extrude the enclosed area.
   - Sketch and extrude the flexure tip according to 'tip radius' and 'contact radius' as defined in `README_spring_properties`.
-  - Add fillets at the tip geometry (same radius as 'tip radius') and flexure root (approximately 1/4 the thickness of the flexure base).
+  - Add fillets at the tip geometry (same radius as 'tip radius') and flexure root (approximately 1/2 the rim thickness).
   - Use circular patterning to duplicate the model based on the number of flexures (n) defined in `README_spring_properties`.
 - **Cam**:
   - Import `cam_raw` and pull the curve into a new sketch on the same plane.
