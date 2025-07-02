@@ -16,12 +16,15 @@ Get the [latest release](https://github.com/neurobionics/spring-design-tool/rele
 ### For MATLAB Users
 
 - Ensure you have a MATLAB license.
-- Install the Design Tool as a custom MATLAB App through **APPS > Install App**.
+- Double-click on `spring_design_tool.mlappinstall` ([found here](https://github.com/neurobionics/spring-design-tool/releases)).
+- Open MATLAB and find the tool under `My Apps`.
 
 ### Without MATLAB License
 
 - Compatible with PCs.
-- Open the `.exe` file to install the Design Tool as a desktop application.
+- Open the `DesignToolStandalone` zip folder
+- Check the `readme`.
+- Double-click `spring_design_tool` to install and open the Design Tool as a desktop application.
 
 ## 🛠️ Usage
 
