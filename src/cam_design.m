@@ -1,4 +1,4 @@
-function [cam_profile_mm, deflection_fac,gap] = cam_design(rad_tip,ball_rad,num_flex,tip_load,k,gap)
+function [cam_profile_mm, deflection_fac, gap, cam_shape_raw_mm] = cam_design(rad_tip,ball_rad,num_flex,tip_load,k,gap)
 % This function numerically generates a cam profile which will apply forces
 % in the correct direction to approximate ideal bending.
 
@@ -80,6 +80,8 @@ end
 % plot(p(:,1),p(:,2),'.')
 % plot(cam_shape(:,1),cam_shape(:,2),'.')
 
+%% Save shape before adding to it
+cam_shape_raw_mm = 1000*[cam_shape zeros(size(cam_shape,1),1)];
 %% Add Fillets at base of cam profile
 cam_shape = flip(cam_shape);
 fillet_center = cam_shape(end,:) + [ball_rad -2*gap];
@@ -103,7 +105,7 @@ full_cam = [full_cam; full_cam(1,:)];
 cam_profile_mm = 1000*[full_cam zeros(size(full_cam,1),1)];
 % cam_profile_mm = 1000*[zeros(size(full_cam,1),1) full_cam(:,2) full_cam(:,1)]; % this is just for importing curves into the testbed camshaft CAD
 % writematrix((cam_profile_mm),'cam_profile_mm.txt') % flex_uncut
-plot(cam_profile_mm(:,1),cam_profile_mm(:,2))
+% plot(cam_profile_mm(:,1),cam_profile_mm(:,2))
 
     function fval = find_itrst(theta,line,contact,mult)
         dx = line(1,2) - line(1,1);

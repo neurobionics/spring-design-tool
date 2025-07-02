@@ -72,12 +72,12 @@ else
     
     %% Section 3: Add tip/fillets to flexure and create cam
     [raw_mm,pattern_mm,wedge_mm,inner_mm,outer_mm,pins_rad,pins_num] = create_geometry([side_left side_right],rad_out,rad_root,rad_tip,num_flex,step,ball_rad,pins_num,pins_rad);
-    [cam_profile_mm, deflection_fac, gap] = cam_design(rad_tip,ball_rad,num_flex,tip_load,k,gap);
+    [cam_profile_mm, deflection_fac, gap, cam_raw_mm] = cam_design(rad_tip,ball_rad,num_flex,tip_load,k,gap);
     % writematrix(pattern_mm/1000,'C:\Users\zbons\Downloads\pattern.csv')
     
     %% Package return variables:
     profiles = struct('raw',raw_mm,'pattern',pattern_mm,'wedge',wedge_mm, ...
-        'inner',inner_mm,'outer',outer_mm,'cam_profile',cam_profile_mm);
+        'inner',inner_mm,'outer',outer_mm,'cam_profile',cam_profile_mm,'cam_raw',cam_raw_mm);
     returnVals = struct('RootRadius',rad_root,'ContactRadius',rad_tip, ...
         'NumberFlexures',num_flex,'NumberPins',pins_num,'PinRadius',pins_rad, ...
         'DesiredDeflection',defl_des,'RunTime',run_time,'StepSize',step, ...
