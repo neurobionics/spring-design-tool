@@ -106,8 +106,8 @@ You will need the following resources to import the spring geometry:
 
 ## 📚 Examples
 
-Explore these literature examples of torsional spring applications, as well as spring radius, thickness, stiffness, and deflection parameters:
+Explore possible applications for torsional springs, and notice the mass and volume savings that can be achieved with this design tool:
 
 <div align="center">
-  <img src="assets/github_examples.png" width="800" alt="Spring Examples"/>
+  <img src="assets/github_examples2.png" width="1000" alt="Spring Examples"/>
 </div>
