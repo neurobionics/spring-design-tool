@@ -106,11 +106,8 @@ You will need the following resources to import the spring geometry:
 
 ## 📚 Examples
 
-If unfamiliar with designing springs or unsure of suitable stiffness/deflection ranges, explore these literature examples of spring radius, thickness, stiffness, and deflection:
+Explore these literature examples of torsional spring applications, as well as spring radius, thickness, stiffness, and deflection parameters:
 
-- **dos Santos et al. '15**: 62.5 mm, 6 mm, 150 Nm/rad, 5.73°
-- **Carpino et al. '12**: 42.5 mm, 3 mm, 92 Nm/rad, 4.76°
-- **Georgiev et al. '17**: 74 mm, 9.5 mm, 600 Nm/rad, 20°
-- **Tsagarakis et al. '09**: 35 mm, 10 mm, 153 Nm/rad, 10°
-- **Lagoda et al. '10**: 37.5 mm, 15 mm, 353 Nm/rad, 16.23°
-- **Wang et al. '13**: 41.5 mm, 10.5 mm, 800 Nm/rad, 7.16°
+<div align="center">
+  <img src="assets/github_examples.png" width="800" alt="Spring Examples"/>
+</div>
